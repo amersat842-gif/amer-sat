@@ -131,7 +131,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 18px 9
 
 <main class="wrap">
 
-‎<!-- الرئيسية -->
+<!-- الرئيسية -->
 <section class="page" id="home">
   <div class="hero">
     <div>
@@ -164,7 +164,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 18px 9
   </div>
 </section>
 
-‎<!-- المنتجات -->
+<!-- المنتجات -->
 <section class="page" id="products">
   <h2>منتجاتنا</h2>
   <p class="muted">اختار القسم، واضغط "اطلب الآن" ويوصلك رد مباشر على واتساب.</p>
@@ -172,7 +172,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 18px 9
   <div class="grid" id="prodGrid"></div>
 </section>
 
-‎<!-- من نحن -->
+<!-- من نحن -->
 <section class="page" id="about">
   <h2>من نحن</h2>
   <div class="owner">
@@ -196,7 +196,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 18px 9
   </div>
 </section>
 
-‎<!-- اتصل بنا -->
+<!-- اتصل بنا -->
 <section class="page" id="contact">
   <h2>اتصل بنا</h2>
   <div class="two">
@@ -231,7 +231,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 18px 9
 <span class="wa-tip">كلمنا على واتساب</span>
 
 <script>
-‎/* ===== الكود الأساسي: لا تحتاج تعديله ===== */
+/* ===== الكود الأساسي: لا تحتاج تعديله ===== */
 function init(){
 var $=function(s,r){return (r||document).querySelector(s)},$$=function(s){return [].slice.call(document.querySelectorAll(s))};
 function wa(t){return "https://wa.me/"+CFG.phone+"?text="+encodeURIComponent(t)}
@@ -256,7 +256,7 @@ function go(id){
 /* init */
 $("#shopName").textContent=CFG.shop;$("#ftName").textContent=CFG.shop;$("#ownerName").textContent=CFG.owner;
 $("#phoneShow").textContent=CFG.phoneShow;$("#addrShow").textContent=CFG.address;$("#hoursShow").textContent=CFG.hours;$("#mgrShow").textContent=CFG.owner;
-$("#callBtn").href="tel:+"+CFG.phone;
+$("#callBtn").href="tel:+"+CFG.phone;$("#callBtn").target="_self";
 if(CFG.mapUrl){$("#mapBtn").href=CFG.mapUrl;$("#mapBtn").hidden=false}
 if(CFG.mapEmbed){$("#mapBox").innerHTML='<iframe src="'+CFG.mapEmbed+'" title="موقع المحل على الخريطة" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%;height:320px;border:0;border-radius:12px" allowfullscreen></iframe>'}
 $("#logoImg").innerHTML=avatar();$("#ownerImg").innerHTML=avatar();
@@ -280,7 +280,7 @@ addEventListener("hashchange",function(){go(location.hash.slice(1)||"home")});
 </script>
 
 <script>
-‎/* ===== إعدادات المحل: عدّل القيم هنا ===== */
+/* ===== إعدادات المحل: عدّل القيم هنا ===== */
 var CFG = {
   shop: "عامر سات",
   owner: "أ/ أيمن محمد عامر",
@@ -294,7 +294,7 @@ var CFG = {
 };
 /* ======================================== */
 var CATS = ["الكل","رسيفرات","أطباق ولنبات","كابلات ووصلات","ملحقات"];
-‎/* صورة المنتج: الصق في خانة img كود base64 كاملاً يبدأ بـ data:image/jpeg;base64, — أو اسم ملف مرفوع مثل "img/a.jpg". لو تركتها فاضية تظهر الأيقونة */
+/* صورة المنتج: الصق في خانة img كود base64 كاملاً يبدأ بـ data:image/jpeg;base64, — أو اسم ملف مرفوع مثل "img/a.jpg". لو تركتها فاضية تظهر الأيقونة */
 var P = [
  {
   n:"رسيفر HD ستاندرد", c:"رسيفرات", i:"📺",
@@ -364,7 +364,7 @@ var P = [
  }
 ];
 
-‎/* تشغيل الموقع (اتركه في آخر الملف) */
+/* تشغيل الموقع (اتركه في آخر الملف) */
 init();
 </script>
 </body>
